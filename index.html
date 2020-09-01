@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Football Quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'> 
+</head>
+<body>
+
+    <h1>Football Quiz</h1>
+
+    <form>
+        <!-- Personal data --> 
+        <fieldset>
+            <legend>Personal data</legend>
+            <ul>
+                <li><label for="name">Name:</label> <input type="text" name="name" id="name" value="" /></li>
+                <li><label for="surname">Surname:</label> <input type="text" name="surname" id="surname" value="" /></li>
+            </ul>
+        </fieldset>
+
+        <!-- Quiz questions -->
+        <fieldset>
+            <legend>Can you guess 6 correct answers?</legend>
+            <ul>
+                <li>What is the philosophy of AFC Ajax
+                    <ul>
+                        <li><input type="radio" name="philosophy" id="tranfers" value="tranfers" checked="checked"><label for="tranfers">Spending a lot of money on tranfers</label></li>
+                        <li><input type="radio" name="philosophy" id="own" value="own"><label for="own">Creating and using own players</label></li>
+                        <li><input type="radio" name="philosophy" id="loan" value="loan"><label for="loan">Loaning a lot of players form the big teams</label></li>
+                    </ul>
+                </li>
+                <li>Who is the best at Markin and Recovery from these players?
+                    <ul>
+                        <li><input type="radio" name="recovery" id="suarez" value="suarez" checked="checked"><label for="suarez">Luis Suarez</label></inpput></li>
+                        <li><input type="radio" name="recovery" id="lewa" value="lewa"><label for="lewa">Robert Lewandowski</label></inpput></li>
+                        <li><input type="radio" name="recovery" id="ramos" value="ramos"><label for="ramos">Sergio Ramos</label></inpput></li>
+                    </ul>
+                </li>
+                <li>Who is the best at Markin and Recovery from these players?
+                    <ul>
+                        <li><input type="radio" name="freekick" id="beks" value="beks" checked="checked"><label for="beks">David Beckham</label></inpput></li>
+                        <li><input type="radio" name="freekick" id="ruud" value="ruud"><label for="ruud">Ruud-Van-Nisterlooy</label></inpput></li>
+                        <li><input type="radio" name="freekick" id="maldini" value="maldini"><label for="maldini">Paulo Maldini</label></inpput></li>
+                    </ul>
+                </li>
+                <li>What is Xabi Alonso best skill
+                    <ul>
+                        <li><input type="radio" name="skill" id="head" value="head" checked="checked"><label for="head">his heading</label></inpput></li>
+                        <li><input type="radio" name="skill" id="dribbling" value="dribbling"><label for="dribbling">his dribbling</label></inpput></li>
+                        <li><input type="radio" name="skill" id="pass" value="pass"><label for="pass">his long pass</label></inpput></li>
+                    </ul>
+                </li>
+                <li>Who is the best at Dribbling and Acceleration from the mentioned below?
+                    <ul>
+                        <li><input type="radio" name="acceleration" id="mbappe" value="mbappe" checked="checked"><label for="mbappe">Kylian Mbappé</label></inpput></li>
+                        <li><input type="radio" name="acceleration" id="donnarumma" value="donnarumma"><label for="donnarumma">Gianluigi Donnarumma</label></inpput></li>
+                        <li><input type="radio" name="acceleration" id="witsel" value="witsel"><label for="witsel">Axel Witsel</label></inpput></li>
+                    </ul>
+                </li>
+                <li>What kind of football style is typical for England Championship?
+                    <ul>
+                        <li><input type="radio" name="style" id="shortpass" value="shortpass" checked="checked"><label for="shortpass">Style with short passes</label></inpput></li>
+                        <li><input type="radio" name="style" id="creative" value="creative"><label for="creative">Creative and technique style</label></inpput></li>
+                        <li><input type="radio" name="style" id="longpass" value="longpass"><label for="longpass">Style with long passes and aerial duels</label></inpput></li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+
+        <!-- Who is the player -->
+        <fieldset>
+            <legend>Try to guess who is the player in the photo!</legend>
+            <ul>
+                <li><img src="photos/1.jpg" alt="">
+                    <ul>
+                        <li><input type="radio" name="photo1" id="jong" value="jong" checked="checked"><label for="jong">Frenkie de Jong</label></inpput></li>
+                        <li><input type="radio" name="photo1" id="rakitic" value="rakitic"><label for="rakitic">Ivan Rakitic</label></inpput></li>
+                        <li><input type="radio" name="photo1" id="lenglet" value="lenglet"><label for="lenglet">Clément Lenglet</label></inpput></li>
+                    </ul>
+                </li>
+                <li><img src="photos/2.jpg" alt="">
+                    <ul>
+                        <li><input type="radio" name="photo2" id="mats" value="mats" checked="checked"><label for="mats">Mats Hummels</label></inpput></li>
+                        <li><input type="radio" name="photo2" id="can" value="can"><label for="can">Emre Can</label></inpput></li>
+                        <li><input type="radio" name="photo2" id="henrikh" value="henrikh"><label for="henrikh"></label>Henrikh Mkhitaryan</label></inpput></li>
+                    </ul>
+                </li>
+                <li><img src="photos/3.jpg" alt="">
+                    <ul>
+                        <li><input type="radio" name="photo3" id="paulo" value="paulo" checked="checked"><label for="paulo">Paulo Dybala</label></inpput></li>
+                        <li><input type="radio" name="photo3" id="costa" value="costa"><label for="costa">Douglas Costa</label></inpput></li>
+                        <li><input type="radio" name="photo3" id="juan" value="juan"><label for="juan"></label>Juan Cuadrado</label></inpput></li>
+                    </ul>
+                </li>
+                <li><img src="photos/4.jpg" alt="">
+                    <ul>
+                        <li><input type="radio" name="photo4" id="boateng" value="boateng" checked="checked"><label for="boateng">Jérôme Boateng</label></inpput></li>
+                        <li><input type="radio" name="photo4" id="alaba" value="alaba"><label for="alaba">David Alaba</label></inpput></li>
+                        <li><input type="radio" name="photo4" id="davies" value="davies"><label for="davies"></label>Alphonso Davies</label></inpput></li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+    <script src='app.js'></script>    
+</body>
+</html>
