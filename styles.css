@@ -1,0 +1,72 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+h1 { 
+    text-align: center;
+    font-size: 45px;
+    padding: 100px 0px;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 5px;
+}
+
+li {
+    padding: 5px;
+}
+
+fieldset {
+    margin: 20px auto;
+    max-width: 60%;
+    border: 2px solid rgb(2, 83, 2);
+}
+
+legend {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.personal ul {
+    text-align: center;
+}
+
+.personal label {
+    width: 100px;
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.players {
+    text-align: center;
+}
+
+.player {
+    border-bottom: 1px solid rgb(2, 83, 2);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.player li {
+    display: inline-block;
+}
+
+input[type="submit"] {
+    background-color: rgb(2, 83, 2);
+    color: white;
+    font-size: 16px;
+    padding: 10px 60px;
+    display: block;
+    margin: 20px auto;
+  }
+
