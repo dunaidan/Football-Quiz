@@ -68,5 +68,14 @@ input[type="submit"] {
     padding: 10px 60px;
     display: block;
     margin: 20px auto;
-  }
+}
 
+.textSuccess {
+    border: 2px solid limegreen;
+    outline: none;
+}
+
+.textError {
+    border: 2px solid crimson;
+    outline: none;
+}
