@@ -87,3 +87,12 @@ input[type="submit"] {
     color: crimson;
     display: none;
 }
+
+.right {
+    color:rgb(2, 83, 2);
+    font-weight: bold;
+}
+
+.wrong {
+    color: crimson;  
+}

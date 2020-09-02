@@ -6,7 +6,7 @@ const pattern = /^[a-z]{3,}$/i;
 
 //correct answers
 const correctAnswers = ['own', 'ramos', 'beks', 'pass', 'mbappe', 'longpass', 'rakitic', 'henrikh', 'paulo', 'alaba'];
-const submit = document.querySelector('input[type="submit"]');
+const submit = document.querySelector('form');
 
 //live check, the name and surname should contain 3 and more characters, only letters
 textInput.forEach(item => {
@@ -20,7 +20,7 @@ textInput.forEach(item => {
 });
 
 //check the answers after submit button was pressed
-submit.addEventListener('click', e => {
+submit.addEventListener('submit', e => {
     //prevent page reload
     e.preventDefault();
 
@@ -31,9 +31,10 @@ submit.addEventListener('click', e => {
 
     const userAnswers = document.querySelectorAll('input[type="radio"]:checked');
 
-    if(!pattern.test(name) && !pattern.test(surname)){
+    if(!pattern.test(name) || !pattern.test(surname)){
         scrollTo(0, 0); 
         error.style.display = "block";
+        console.log('return');
         return;
     }
 
@@ -44,6 +45,11 @@ submit.addEventListener('click', e => {
     userAnswers.forEach(answer => {
         if(answer.value === correctAnswers[i]){
             result += weight;
+            document.querySelector(`label[for="${correctAnswers[i]}"]`).className = 'right';
+        } else {
+            //color the right and the wrong answer
+            document.querySelector(`label[for="${correctAnswers[i]}"]`).className = 'right';
+            document.querySelector(`label[for="${answer.value}"]`).className = 'wrong';
         }
         i++;
     });
